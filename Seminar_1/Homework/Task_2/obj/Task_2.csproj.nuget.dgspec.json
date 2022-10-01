@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/aleksandrrandin/Desktop/C_sharp/C_sharp.csproj": {}
+    "/Users/aleksandrrandin/Desktop/C_sharp/Seminar_1/Homework/Task_2/Task_2.csproj": {}
   },
   "projects": {
-    "/Users/aleksandrrandin/Desktop/C_sharp/C_sharp.csproj": {
+    "/Users/aleksandrrandin/Desktop/C_sharp/Seminar_1/Homework/Task_2/Task_2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/aleksandrrandin/Desktop/C_sharp/C_sharp.csproj",
-        "projectName": "C_sharp",
-        "projectPath": "/Users/aleksandrrandin/Desktop/C_sharp/C_sharp.csproj",
+        "projectUniqueName": "/Users/aleksandrrandin/Desktop/C_sharp/Seminar_1/Homework/Task_2/Task_2.csproj",
+        "projectName": "Task_2",
+        "projectPath": "/Users/aleksandrrandin/Desktop/C_sharp/Seminar_1/Homework/Task_2/Task_2.csproj",
         "packagesPath": "/Users/aleksandrrandin/.nuget/packages/",
-        "outputPath": "/Users/aleksandrrandin/Desktop/C_sharp/obj/",
+        "outputPath": "/Users/aleksandrrandin/Desktop/C_sharp/Seminar_1/Homework/Task_2/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/aleksandrrandin/.nuget/NuGet/NuGet.Config"
