@@ -3,7 +3,7 @@
 // 44 5 78 -> 78
 // 22 3 9 -> 22
 Console.Clear();
-int max = 0;
+int max;
 
 Console.Write("Введите первое число: ");
 int number1 = int.Parse(Console.ReadLine()!);
