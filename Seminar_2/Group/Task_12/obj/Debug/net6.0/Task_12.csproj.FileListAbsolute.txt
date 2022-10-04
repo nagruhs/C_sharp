@@ -1,0 +1,15 @@
+/Users/aleksandrrandin/Desktop/C_sharp/Seminar_2/Group/Task_12/bin/Debug/net6.0/Task_12
+/Users/aleksandrrandin/Desktop/C_sharp/Seminar_2/Group/Task_12/bin/Debug/net6.0/Task_12.deps.json
+/Users/aleksandrrandin/Desktop/C_sharp/Seminar_2/Group/Task_12/bin/Debug/net6.0/Task_12.runtimeconfig.json
+/Users/aleksandrrandin/Desktop/C_sharp/Seminar_2/Group/Task_12/bin/Debug/net6.0/Task_12.dll
+/Users/aleksandrrandin/Desktop/C_sharp/Seminar_2/Group/Task_12/bin/Debug/net6.0/Task_12.pdb
+/Users/aleksandrrandin/Desktop/C_sharp/Seminar_2/Group/Task_12/obj/Debug/net6.0/Task_12.csproj.AssemblyReference.cache
+/Users/aleksandrrandin/Desktop/C_sharp/Seminar_2/Group/Task_12/obj/Debug/net6.0/Task_12.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aleksandrrandin/Desktop/C_sharp/Seminar_2/Group/Task_12/obj/Debug/net6.0/Task_12.AssemblyInfoInputs.cache
+/Users/aleksandrrandin/Desktop/C_sharp/Seminar_2/Group/Task_12/obj/Debug/net6.0/Task_12.AssemblyInfo.cs
+/Users/aleksandrrandin/Desktop/C_sharp/Seminar_2/Group/Task_12/obj/Debug/net6.0/Task_12.csproj.CoreCompileInputs.cache
+/Users/aleksandrrandin/Desktop/C_sharp/Seminar_2/Group/Task_12/obj/Debug/net6.0/Task_12.dll
+/Users/aleksandrrandin/Desktop/C_sharp/Seminar_2/Group/Task_12/obj/Debug/net6.0/refint/Task_12.dll
+/Users/aleksandrrandin/Desktop/C_sharp/Seminar_2/Group/Task_12/obj/Debug/net6.0/Task_12.pdb
+/Users/aleksandrrandin/Desktop/C_sharp/Seminar_2/Group/Task_12/obj/Debug/net6.0/Task_12.genruntimeconfig.cache
+/Users/aleksandrrandin/Desktop/C_sharp/Seminar_2/Group/Task_12/obj/Debug/net6.0/ref/Task_12.dll
