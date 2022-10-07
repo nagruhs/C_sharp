@@ -3,14 +3,22 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
+void cub(int num)
+{
+    for (int i = 1; i <= num; i++)
+    {
+        Console.Write($"{i * i * i}");
+        if (i != num) Console.Write(", ");
+    }
+}
+
+
 Console.Clear();
 
 Console.Write("Введите число не менее 1: ");
-int num = int.Parse(Console.ReadLine()!);
-int index = 1;
+int N = int.Parse(Console.ReadLine()!);
 
-while (index <= num)
-{
-    Console.Write($"{index * index * index}, ");
-    index++;
-}
+cub(N);
+
+
+

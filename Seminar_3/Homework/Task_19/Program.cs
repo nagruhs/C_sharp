@@ -4,16 +4,21 @@
 // 12821 -> да
 // 23432 -> да
 
+void polindrom(int number)
+{
+    if (number / 10000 == number % 10 && number / 1000 - number / 10000 * 10 == (number % 100) / 10)
+    {
+        Console.Write("Да");
+    }
+    else
+    {
+        Console.Write("Нет или неверный формат числа");
+    }
+}
+
 Console.Clear();
 
 Console.Write("Введите пятизначное число: ");
-int number = int.Parse(Console.ReadLine()!);
+int n = int.Parse(Console.ReadLine()!);
+polindrom(n);
 
-if (number / 10000 == number % 10 && number / 1000 - number / 10000 * 10 == (number % 100) / 10)
-{
-    Console.Write("Да");
-}
-else
-{
-    Console.Write("Нет или неверный формат числа");
-}
