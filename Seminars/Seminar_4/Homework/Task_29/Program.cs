@@ -45,7 +45,7 @@ void PrintArray(int[] mass)
 }
 
 
-
+Console.Clear();
 
 Console.Write("Введите числа через запятую, например \"1, 2, 3, 4\" : ");
 string array = Console.ReadLine()!;
