@@ -1,5 +1,5 @@
-﻿// Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
-// [345, 897, 568, 234] -> 2
+﻿// Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+// [3 7 22 2 78] -> 76
 
 
 // Метод создания массива c рандомными числами (minlenght - минимальная длина массива, maxlenght - максимальная длина массива, mindigit - минимальное число в значении, maxdigit - максимальное число в значении)
@@ -32,24 +32,27 @@ void PrintArray(int[] mass)
 }
 
 
-// метод подсчета количества четных чисел
-int Count(int[] array)
+// метод находит разницу между максимальным и минимальным элементами массива
+int MaxMinResult(int[] array)
 {
-    int count = 0;
-
+    int min = array[0];
+    int max = array[0];
     for (int i = 0; i < array.Length; i++)
     {
-        if (array[i] % 2 == 0) count++;
+        if (array[i] > max) max = array[i];
+        if (array[i] < min) min = array[i];
+
     }
-    return count;
+    int result = max - min;
+    return result;
 }
 
 
 // программа
 Console.Clear();
-int[] ArrayResult = RandomArr(5, 10, 100, 999);
-int count = Count(ArrayResult);
+int[] ArrayResult = RandomArr(5, 10, 0, 99);
+int result = MaxMinResult(ArrayResult);
 
 Console.Write("В массиве: ");
 PrintArray(ArrayResult);
-Console.WriteLine($" количество четных чисел = {count}");
+Console.WriteLine($" разница между максимальным и минимальным элементов массива= {result}");

@@ -3,16 +3,18 @@
 // [-4, -6, 89, 6] -> 0
 
 
-// Метод создания массива длиной от 5 до 10 с рандомными числами в значениях
-int[] RandomArr()
+// Метод создания массива c рандомными числами (minlenght - минимальная длина массива, maxlenght - максимальная длина массива, mindigit - минимальное число в значении, maxdigit - максимальное число в значении)
+
+int[] RandomArr(int minlenght, int maxlenght, int mindigit, int maxdigit)
 {
-    int[] array = new int[new Random().Next(5, 11)];
+    int[] array = new int[new Random().Next(minlenght, maxlenght + 1)];
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = new Random().Next(-99, 100);
+        array[i] = new Random().Next(mindigit, maxdigit + 1);
     }
     return array;
 }
+
 
 // вывод массива на экран
 void PrintArray(int[] mass)
@@ -46,9 +48,9 @@ int SumNechetIndex(int[] array)
 
 // программа
 Console.Clear();
-int[] ArrayResult = RandomArr();
+int[] ArrayResult = RandomArr(5, 10, -99, 99);
 int sum = SumNechetIndex(ArrayResult);
 
-Console.WriteLine($"В массиве:");
+Console.Write("В массиве: ");
 PrintArray(ArrayResult);
 Console.WriteLine($" сумма элементов на нечетных позициях = {sum}");
