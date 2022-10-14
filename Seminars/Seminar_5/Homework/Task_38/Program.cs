@@ -2,35 +2,16 @@
 // [3 7 22 2 78] -> 76
 
 
-// Метод создания массива c рандомными числами (minlenght - минимальная длина массива, maxlenght - максимальная длина массива, mindigit - минимальное число в значении, maxdigit - максимальное число в значении)
-
-int[] RandomArr(int minlenght, int maxlenght, int mindigit, int maxdigit)
+int[] GetArray(int size, int minValue, int maxValue)
 {
-    int[] array = new int[new Random().Next(minlenght, maxlenght + 1)];
-    for (int i = 0; i < array.Length; i++)
+    int[] res = new int[size];
+
+    for (int i = 0; i < size; i++)
     {
-        array[i] = new Random().Next(mindigit, maxdigit + 1);
+        res[i] = new Random().Next(minValue, maxValue + 1);
     }
-    return array;
+    return res;
 }
-
-
-// вывод массива на экран
-void PrintArray(int[] mass)
-{
-    Console.Write("[");
-    for (int i = 0; i < mass.Length; i++)
-    {
-        Console.Write($"{mass[i]}");
-        if (i != mass.Length - 1)
-        {
-            Console.Write(", ");
-
-        }
-    }
-    Console.Write("]");
-}
-
 
 // метод находит разницу между максимальным и минимальным элементами массива
 int MaxMinResult(int[] array)
@@ -50,9 +31,6 @@ int MaxMinResult(int[] array)
 
 // программа
 Console.Clear();
-int[] ArrayResult = RandomArr(5, 10, 0, 99);
+int[] ArrayResult = GetArray(5, 0, 99);
 int result = MaxMinResult(ArrayResult);
-
-Console.Write("В массиве: ");
-PrintArray(ArrayResult);
-Console.WriteLine($" разница между максимальным и минимальным элементов массива= {result}");
+Console.WriteLine($"В массиве {String.Join(", ", ArrayResult)} разница между максимальным и минимальным элементов массива = {result}");

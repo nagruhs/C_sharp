@@ -2,35 +2,16 @@
 // [345, 897, 568, 234] -> 2
 
 
-// Метод создания массива c рандомными числами (minlenght - минимальная длина массива, maxlenght - максимальная длина массива, mindigit - минимальное число в значении, maxdigit - максимальное число в значении)
-
-int[] RandomArr(int minlenght, int maxlenght, int mindigit, int maxdigit)
+int[] GetArray(int size, int minValue, int maxValue)
 {
-    int[] array = new int[new Random().Next(minlenght, maxlenght + 1)];
-    for (int i = 0; i < array.Length; i++)
+    int[] res = new int[size];
+
+    for (int i = 0; i < size; i++)
     {
-        array[i] = new Random().Next(mindigit, maxdigit + 1);
+        res[i] = new Random().Next(minValue, maxValue + 1);
     }
-    return array;
+    return res;
 }
-
-
-// вывод массива на экран
-void PrintArray(int[] mass)
-{
-    Console.Write("[");
-    for (int i = 0; i < mass.Length; i++)
-    {
-        Console.Write($"{mass[i]}");
-        if (i != mass.Length - 1)
-        {
-            Console.Write(", ");
-
-        }
-    }
-    Console.Write("]");
-}
-
 
 // метод подсчета количества четных чисел
 int Count(int[] array)
@@ -47,9 +28,7 @@ int Count(int[] array)
 
 // программа
 Console.Clear();
-int[] ArrayResult = RandomArr(5, 10, 100, 999);
-int count = Count(ArrayResult);
+int[] array = GetArray(5, 100, 999);
+int count = Count(array);
 
-Console.Write("В массиве: ");
-PrintArray(ArrayResult);
-Console.WriteLine($" количество четных чисел = {count}");
+Console.WriteLine($"В массиве {String.Join(", ", array)} количество четных чисел = {count}");
