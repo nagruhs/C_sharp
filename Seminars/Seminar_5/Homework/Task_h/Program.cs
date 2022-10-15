@@ -37,6 +37,8 @@ int[] GetSort(int[] array)
     return array;
 }
 
+// int[] myarray1 = GetArray(10, -10, 10);
+// Array.Copy(myarray, myarray1, 10);
 
 
 // программа
@@ -45,3 +47,5 @@ int[] myarray = GetArray(10, -10, 10);
 Console.WriteLine($"Изначальный массив: {String.Join(", ", myarray)}");
 int[] newarray = GetSort(myarray);
 Console.WriteLine($"Отсортированный массив: {String.Join(", ", newarray)}");
+
+// Console.WriteLine($"Изначальный массив: {String.Join(", ", myarray1)}");
