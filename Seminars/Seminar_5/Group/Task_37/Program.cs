@@ -39,7 +39,7 @@ int[] ResultArray(int[] array)
 
 Console.Clear();
 Console.WriteLine("Введите массив через пробел: ");
-string input = Console.ReadLine();
+string input = Console.ReadLine()!;
 int[] numArray = GetArrayFromString(input);
 
 int[] newArray = ResultArray(numArray);

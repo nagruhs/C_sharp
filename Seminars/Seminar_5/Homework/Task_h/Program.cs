@@ -1,7 +1,21 @@
-﻿// Задача "со звездочкой": Разобраться с алгоритмом сортировки методом пузырька. Реализовать невозрастающую сторировку.
+﻿//// *** замер времени выполнения
+// using System;
+// using System.Diagnostics;
+// using System.Threading;
+
+// public class Example
+// {
+//     public static void Main()
+//     {
+//         Stopwatch stopwatch = new Stopwatch();
+
+//         stopwatch.Start();
+//         Thread.Sleep(5000);
+
+
+// Задача "со звездочкой": Разобраться с алгоритмом сортировки методом пузырька. Реализовать невозрастающую сторировку.
 // [3, 0, 2, 4, -1] -> [4, 3, 2, 0, -1]
 // [1,2,2,3,2] -> [3, 2, 2, 2, 1]
-
 
 int[] GetArray(int size, int minValue, int maxValue)
 {
@@ -48,4 +62,18 @@ Console.WriteLine($"Изначальный массив: {String.Join(", ", myar
 int[] newarray = GetSort(myarray);
 Console.WriteLine($"Отсортированный массив: {String.Join(", ", newarray)}");
 
+
+
+
+
+
+
+
 // Console.WriteLine($"Изначальный массив: {String.Join(", ", myarray1)}");
+
+// *** замер времени выполнения
+//         stopwatch.Stop();
+
+//         Console.WriteLine("Elapsed Time is {0} ms", stopwatch.ElapsedMilliseconds);
+//     }
+// }

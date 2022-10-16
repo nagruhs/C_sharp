@@ -29,7 +29,7 @@ bool CheckArray(int[] array, int num)
 
 Console.Clear();
 Console.WriteLine("Введите массив через пробел: ");
-string input = Console.ReadLine();
+string input = Console.ReadLine()!;
 int[] numArray = GetArrayFromString(input);
 Console.WriteLine("Введите искомое число: ");
 int n = int.Parse(Console.ReadLine()!);
