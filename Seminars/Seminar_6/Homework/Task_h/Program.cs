@@ -58,7 +58,6 @@ int[] Unravel(int[,] matrix)
     return result;
 }
 
-
 Console.Clear();
 Console.Write("Введите количество строк массива: ");
 int a = int.Parse(Console.ReadLine()!);
@@ -66,12 +65,7 @@ Console.Write("Введите количество столбцов массив
 int b = int.Parse(Console.ReadLine()!);
 int[,] array = new int[a, b];
 
-FillArray(array);
-PrintArray(array);
+PrintArray(FillArray(array));
 int[] result = Unravel(array);
 Console.WriteLine();
 Console.WriteLine($"[{String.Join(", ", result)}]");
-
-
-
-
