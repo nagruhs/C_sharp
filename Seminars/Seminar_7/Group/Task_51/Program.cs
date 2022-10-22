@@ -7,11 +7,12 @@ int[,] GetArray(int m, int n)
     int[,] inArray = new int[m, n];
 
     for (int i = 0; i < m; i++)
+    {
         for (int j = 0; j < n; j++)
         {
             inArray[i, j] = new Random().Next(0, 21);
         }
-
+    }
     return inArray;
 }
 
@@ -49,5 +50,4 @@ int columns = int.Parse(Console.ReadLine()!);
 int[,] array = GetArray(row, columns);
 PrintArray(array);
 Console.WriteLine();
-SumOfMainDiag(array);
 Console.WriteLine($"Сумма элементов, находящихся на главной диагонали = {SumOfMainDiag(array)}");

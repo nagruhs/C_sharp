@@ -8,7 +8,7 @@ int[,] FillArray(int[,] matr)
     {
         for (int j = 0; j < matr.GetLength(1); j++)
         {
-            matr[i, j] = i + j;
+            matr[i, j] = new Random().Next(0, 100);
         }
     }
     return matr;
