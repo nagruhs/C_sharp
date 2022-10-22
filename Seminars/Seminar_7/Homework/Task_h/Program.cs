@@ -39,7 +39,6 @@ int RomanToArab(string roman)
             if (tempArray[i] >= tempArray[i + 1])
             {
                 result += tempArray[i];
-                if (i + 1 == tempArray.Length - 1) result += tempArray[tempArray.Length - 1];
             }
             else
             {
@@ -47,6 +46,7 @@ int RomanToArab(string roman)
                 i++;
             }
         }
+        else if (i == tempArray.Length - 1) result += tempArray[i];
     }
     return result;
 }
@@ -55,48 +55,3 @@ Console.Clear();
 Console.WriteLine("Введите римское число (например: \"MCMXCIV\")");
 string number = Console.ReadLine()!;
 Console.WriteLine($"ответ {RomanToArab(number)}");
-
-
-
-
-
-
-
-
-
-
-
-// switch (roman[i])
-// {
-//     case 'I':
-//         tempArray[i] = 1;
-//         break;
-
-//     case 'V':
-//         tempArray[i] = 5;
-//         break;
-
-//     case 'X':
-//         tempArray[i] = 10;
-//         break;
-
-//     case 'L':
-//         tempArray[i] = 50;
-//         break;
-
-//     case 'C':
-//         tempArray[i] = 100;
-//         break;
-
-//     case 'D':
-//         tempArray[i] = 500;
-//         break;
-
-//     case 'M':
-//         tempArray[i] = 1000;
-//         break;
-
-//     default:
-//         tempArray[i] = 0;
-//         break;
-// }
