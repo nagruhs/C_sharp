@@ -4,7 +4,7 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
-// метод создает двумерный массив double со случайным количеством строк, столбцов и значений:
+// метод создает двумерный массив double со случайными значениями:
 double[,] GetDouble2dArray(int m, int n, double maxValue, double minValue)
 {
     double[,] DoubleRandom2dArray = new double[m, n];
