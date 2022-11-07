@@ -64,7 +64,7 @@ void FillImage(int row, int col)
 
 
 
-
+PrintArray(matrix);
 FillArray(matrix);
 FillImage(5, 5);
 PrintImage(matrix);
