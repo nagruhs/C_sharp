@@ -4,6 +4,7 @@
 // MCMXCIV -> 1994
 
 //метод перевода римских чисел в десятичные арабские.
+
 int RomanToArab(string roman)
 {
     int result = 0;
