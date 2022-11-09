@@ -1,5 +1,4 @@
-﻿// Задача 53: Задайте двумерный массив. Напишите программу, которая поменяет местами первую и последнюю строку массива.
-
+﻿// Задача 55: Задайте двумерный массив. Напишите программу, которая заменяет строки на столбцы. В случае, если это невозможно, программа должна вывести сообщение для пользователя.
 
 // метод создает двумерный массив int со случайными значениями:
 int[,] GetInt2dArray(int rows, int columns, int maxValue, int minValue)
@@ -29,15 +28,25 @@ void PrintDouble2dArray(int[,] inArray)
     }
 }
 
-void ChangeFirstLastRows(int[,] userArray)
+int[,] ChangeRowsToColumns(int[,] userArray)
 {
-    int temp;
-    int n = userArray.GetLength(1);
-    for (int i = 0; i < userArray.GetLength(0); i++)
+
+    if (userArray.GetLength(0) == userArray.GetLength(1))
     {
-        temp = userArray[0, i];
-        userArray[0, i] = userArray[n - 1, i];
-        userArray[n - 1, i] = temp;
+        int[,] resultArray = new int[userArray.GetLength(0), userArray.GetLength(1)];
+        for (int i = 0; i < userArray.GetLength(0); i++)
+        {
+            for (int j = 0; j < userArray.GetLength(1); j++)
+            {
+                resultArray[i, j] = userArray[j, i];
+            }
+        }
+        return resultArray;
+    }
+    else
+    {
+        Console.WriteLine("Массив перевернуть невозможно");
+        return userArray;
     }
 }
 
@@ -53,7 +62,8 @@ int maxValue = int.Parse(Console.ReadLine()!);
 
 int[,] array = GetInt2dArray(rows, columns, maxValue, minValue);
 PrintDouble2dArray(array);
-ChangeFirstLastRows(array);
 Console.WriteLine();
-PrintDouble2dArray(array);
+int[,] result = ChangeRowsToColumns(array);
+PrintDouble2dArray(result);
+
 
