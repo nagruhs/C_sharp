@@ -32,7 +32,11 @@ void Print2dArray(int[,] inArray)
     {
         for (int j = 0; j < inArray.GetLength(1); j++)
         {
-            Console.Write($"{inArray[i, j]}\t ");
+            // //вариант с 1 2 3 и т.д.
+            // Console.Write($"{inArray[i, j]}\t ");
+            // вариант с 01 02 03 и т.д. просто так для красоты
+            if (inArray[i, j] < 10) Console.Write($"0{inArray[i, j]}\t ");
+            else Console.Write($"{inArray[i, j]}\t ");
         }
         Console.WriteLine();
     }
