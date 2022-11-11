@@ -44,3 +44,48 @@ void Print2dArray(int[,] inArray)
 
 Console.Clear();
 Print2dArray(FillSqrArray());
+
+
+
+
+// // способ из вопроса в телеге
+// // метод заполнения квадратного массива 4 на 4 (по условию пользователь не вводит никакие данные)
+// int[,] FillSqrArray()
+// {
+//     int s = 4;
+//     int[,] array = new int[s, s];
+//     int i = 0; int j = 0;
+//     int num = 1;
+
+//     for (int a = 1; a < (s * s); a++)
+//     {
+//         int k = 0;
+//         for (k = 0; k < s - 1; k++) array[i, j++] = num++;
+//         for (k = 0; k < s - 1; k++) array[i++, j] = num++;
+//         for (k = 0; k < s - 1; k++) array[i, j--] = num++;
+//         for (k = 0; k < s - 1; k++) array[i--, j] = num++;
+//         ++i; ++j;
+//         s = s / 2;
+//     }
+//     return array;
+// }
+
+// // метод вывода массива на печать
+// void Print2dArray(int[,] inArray)
+// {
+//     for (int i = 0; i < inArray.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < inArray.GetLength(1); j++)
+//         {
+//             // //вариант с 1 2 3 и т.д.
+//             // Console.Write($"{inArray[i, j]}\t ");
+//             // вариант с 01 02 03 и т.д. просто так для красоты
+//             if (inArray[i, j] < 10) Console.Write($"0{inArray[i, j]}\t ");
+//             else Console.Write($"{inArray[i, j]}\t ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+// Console.Clear();
+// Print2dArray(FillSqrArray());
