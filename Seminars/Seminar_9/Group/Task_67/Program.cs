@@ -3,9 +3,8 @@
 
 int SumOfDigits(int n)
 {
-    if (n == 0)
-        return 0;
-    return (n % 10 + SumOfDigits(n / 10));
+    if (n == 0) return 0;
+    return n % 10 + SumOfDigits(n / 10);
 }
 
 
@@ -13,4 +12,4 @@ Console.Clear();
 Console.Write("Введите число: ");
 int n = int.Parse(Console.ReadLine()!);
 
-Console.WriteLine($"Сумма чисел равна: {SumOfDigits(n)}");
+Console.WriteLine($"Сумма цифр равна: {SumOfDigits(n)}");

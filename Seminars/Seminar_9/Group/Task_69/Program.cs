@@ -5,7 +5,7 @@
 int PowerRec(int a, int b)
 {   //return b == 0 ? 1 : PowerRec(a, n - 1) * a; // то же что и ниже, но одной строкой через тернарный оператор
     if (b == 0) return 1; // 0 в степени 0 это 1
-    else return PowerRec(a, b - 1) * a;
+    return PowerRec(a, b - 1) * a;
 }
 
 Console.Clear();
