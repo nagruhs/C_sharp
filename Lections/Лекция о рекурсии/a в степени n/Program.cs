@@ -21,6 +21,6 @@ int PowerRec(int a, int n)
 // }
 
 
-Console.WriteLine(PowerFor(2, 10)); // 1024
-Console.WriteLine(PowerRec(2, 10)); // 1024
-Console.WriteLine(PowerRecMath(2, 10)); // 1024
+// Console.WriteLine(PowerFor(2, 10));
+Console.WriteLine(PowerRec(2, 10));
+// Console.WriteLine(PowerRecMath(2, 10)); // 1024
